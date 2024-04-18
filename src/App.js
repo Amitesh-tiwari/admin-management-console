@@ -5,6 +5,7 @@ import AppHeader from './components/AppHeader';
 import PageContent from './components/PageContent'
 import SideMenu from './components/Sidebar';
 
+
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <div className="SideMenuAndPageContent">
         <SideMenu></SideMenu>
         <PageContent></PageContent>
+        
       </div>
       <AppFooter />
     </div>

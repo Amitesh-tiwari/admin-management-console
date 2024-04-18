@@ -1,9 +1,7 @@
 import {
-    ToolTwoTone,
     CreditCardTwoTone,
     AppstoreOutlined,
     PlusOutlined,
-    ShopOutlined,
     ShoppingCartOutlined,
     UserOutlined,
   } from "@ant-design/icons";
@@ -13,6 +11,7 @@ import {
   import { Menu } from "antd";
   import { useEffect, useState } from "react";
   import { useLocation, useNavigate } from "react-router-dom";
+  //import Card from "../../Pages/Card"
   
   function SideMenu() {
     const location = useLocation();
@@ -77,6 +76,7 @@ import {
             },
           ]}
         ></Menu>
+       
       </div>
     );
   }

@@ -52,3 +52,12 @@ Table{
   margin-left: 5px;
 
 }
+.form-create{
+  background-color: white;
+  padding: 30px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 220px;
+  width: 500px;
+}
