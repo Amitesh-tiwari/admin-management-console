@@ -5,6 +5,24 @@ import { Form, Input, Button } from "antd";
 import { Card } from "react-bootstrap";
 //import TypedInputNumber from "antd/es/input-number";
 //import { act } from "react-dom/test-utils";
+
+const generateCard = () => {
+    return (
+        <Card>
+            <Card.Img variant="top" src="holder.js/100px180" />
+            <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+            </Card.Body>
+        </Card>
+    );
+};
+<Button type="primary" onClick={generateCard}>
+    Next
+</Button>
 function Inventory() {
     const [loading, setLoading] = useState(false);
     const [dataSource, setDataSource] = useState([]);
@@ -17,20 +35,7 @@ function Inventory() {
         });
     }, []);
 
-    const generateCard = () => {
-        return (
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                        Some quick example text to build on the card title and make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-        );
-    };
+    
 
     return (
         <div className="form-create">
